@@ -1,0 +1,457 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media web page</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+    .sidepanel  {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #e6dddd;
+        display: block;
+        transition: 0.3s;
+      }
+      .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+      }
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+      }
+      .openbtn:hover {
+        background-color:#444;
+      }
+    </style>
+</head>
+<body class="bg-[#FFFFFF]">
+    <div class="lg:pl-[130px] sm:pl-10 lg:pr-[120px] sm:pr-10 px-5 lg:pt-10 pt-5 lg:pb-[70px] pb-10 border-b border-[#E3E6E9]">
+        <div class="flex items-center justify-between w-full">
+            <div class="flex items-center">
+                <p class="text-black font-bold text-xl">LOGO</p>
+                <div class="lg:hidden block">
+                    <div id="main">
+                        <button class="openbtn" onclick="openNav()">&#9776;</button>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar -->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">Products</a>
+                <a href="#">Packages</a>
+                <a href="#">Blog</a>
+                <a href="#">Tesinimonials</a>
+              </div>
+            <div class="justify-center items-center lg:inline-flex hidden">
+                <div class="flex items-center">
+                    <p class="font-semibold text-sm text-balck mr-3">Product</p>
+                    <img src="images/down-arrow-product.svg" alt="icon">
+                </div>
+                <div class="flex items-center ml-7">
+                    <p class="font-semibold text-sm text-balck mr-3">Packages</p>
+                    <img src="images/down-arrow-product.svg" alt="icon">
+                </div>
+                <div class="items-center ml-7">
+                    <p class="font-semibold text-sm text-balck mr-3">Blog</p>
+                </div>
+                <div class="items-center ml-7">
+                    <p class="font-semibold text-sm text-balck mr-3">Tesinimonials</p>
+                </div>
+            </div>
+            <div class="flex justify-end items-center">
+                <p class="text-black text-sm font-semibold sm:mr-[50px]">Sign In</p>
+                <button type="button" class="w-[137px] py-[17px] bg-[#4F46BA] text-semibold font-normal text-white sm:ml-0 ml-3">
+                    Start Free
+                </button>
+            </div>
+        </div>
+        <div class="lg:mt-[60px] mt-10 w-full flex justify-between">
+            <div class="lg:w-[40%] w-full">
+                <p class="font-extrabold text-[#000000] lg:text-xl1 text-2xl">Increase your followers on social media</p>
+                <p class="mt-[18px] font-medium text-lg text-black">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+                <button type="button" class="w-[186px] py-[14px] bg-[#4F46BA] font-bold text-white text-sm flex items-center rounded-[5px] pl-[18px] mt-5">
+                    Get Started
+                    <span>
+                        <img src="images/right-arrow.svg" alt="icon" class="pl-11">
+                    </span>
+                </button>
+                <div class="mt-[50px]">
+                    <div class="flex items-center">
+                        <img src="images/person-1.svg" alt="icon" class="rounded-full border-white hover:z-[1]">
+                        <img src="images/person-2.svg" alt="icon" class="rounded-full border-white -ml-3 hover:z-[1]">
+                        <img src="images/person-3.svg" alt="icon" class="rounded-full border-white -ml-3 hover:z-[1]">
+                        <img src="images/person-4.svg" alt="icon" class="rounded-full border-white -ml-4 hover:z-[1]">
+                        <img src="images/person-5.svg" alt="icon" class="rounded-full border-white -ml-4 hover:z-[1]">
+                        <img src="images/person-6.svg" alt="icon" class="rounded-full border-white -ml-4 hover:z-[1]">
+                        <div class="relative w-full">
+                            <img src="images/persons.svg" alt="icon" class="rounded-full border-white -ml-4 hover:z-[1]">
+                            <span class="absolute top-[16px] left-[-5px] font-bold text-white text-xl2">12k+</span>
+                        </div>
+                    </div>
+                    <p class="font-medium text-lg text-black mt-4">2,000+ people already joined the arshakir’s </p>
+                    <p class="font-medium text-lg text-black"> increase followers plan. Get started today!</p>
+                </div>
+            </div>
+            <div class="w-[60%] lg:block hidden">
+                <img src="images/tst.png" alt="image" class="w-full">
+            </div>
+        </div>
+    </div>
+    <div class="lg:px-[90px] sm:px-10 px-5 lg:py-[70px] py-10 border-b border-[#E3E6E9] w-full">
+        <p class="text-center text-black text-xl3 font-semibold">Trusted By Over 100+ Startups and freelance business</p>
+        <div class="flex items-center w-full lg:justify-between justify-center flex-wrap sm:mt-[78px] mt-6">
+            <img src="images/clients logo/Group.png" alt="logo" class="lg:ml-0 sm:ml-8  ml-4 lg:mb-0 mb-4">
+            <img src="images/clients logo/Group-1.png" alt="logo" class="lg:ml-0 sm:ml-8  ml-4 lg:mb-0 mb-4">
+            <img src="images/clients logo/Group-2.png" alt="logo" class="lg:ml-0 sm:ml-8  ml-4 lg:mb-0 mb-4">
+            <img src="images/clients logo/Group-3.png" alt="logo" class="lg:ml-0 sm:ml-8  ml-4 lg:mb-0 mb-4">
+            <img src="images/clients logo/Group-4.png" alt="logo" class="lg:ml-0 sm:ml-8  ml-4 lg:mb-0 mb-4">
+            <img src="images/clients logo/Group-5.png" alt="logo" class="lg:ml-0 sm:ml-8  ml-4 lg:mb-0 mb-4">
+            <img src="images/clients logo/Group-6.png" alt="logo" class="lg:ml-0 sm:ml-8  ml-4 lg:mb-0 mb-4">
+        </div>
+    </div>
+    <div class="relative lg:px-[123px] sm:px-24 px-5 lg:pt-[160px] pt-10  lg:pb-[84px] pb-10">
+        <img src="images/Group 14.png" alt="image" class="absolute left-0 top-0 w-20 h-20 sm:opacity-100 opacity-25">
+        <img src="images/Group 15.png" alt="image" class="absolute right-0 top-0 w-20 h-20 sm:opacity-100 opacity-25">
+        <div>
+            <p class="font-extrabold lg:text-xl4 text-2xl text-black">One platform to increase</p>
+            <p class="font-extrabold lg:text-xl4 text-2xl text-black"> followers on all social media.</p>
+            <div class="w-full flex lg:justify-evenly justify-start items-center flex-wrap" style="margin-top: 52px;">
+                <div class="lg:w-1/4 sm:w-1/2 lg:mr-0 mr-10 mb-5 px-2">
+                    <img src="images/secure.svg" alt="image">
+                    <p class="py-5 font-semibold text-black text-xl3">100% Secure</p>
+                    <p class="font-medium text-sm text-black">From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly.</p>
+                </div>
+                <div class="lg:w-1/4 sm:w-1/2 lg:mr-0 mr-10 mb-5">
+                    <img src="images/No-cookies-required.svg" alt="image">
+                    <p class="py-5 font-semibold text-black text-xl3">No Cookies Required</p>
+                    <p class="font-medium text-sm text-black pt-[6px]">Age and draw mrs like. Improving end distrusts may instantly was household applauded incommode.</p>
+                </div>
+                <div class="lg:w-1/4 sm:w-1/2 lg:mr-0 mr-10 mb-5 px-2">
+                    <img src="images/Money-back-gurantee.svg" alt="image">
+                    <p class="py-5 font-semibold text-black text-xl3">Moneyback Guarrentee</p>
+                    <p class="font-medium text-sm text-black">Improving end distrusts may instantly was from they fine john he give of rich he. They age and draw mrs like. </p>
+                </div>
+                <div class="lg:w-1/4 sm:w-1/2 lg:mr-0 mr-10 mb-5">
+                    <img src="images/secure.svg" alt="image">
+                    <p class="py-5 font-semibold text-black text-xl3">100% Secure</p>
+                    <p class="font-medium text-sm text-black">From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative w-full pb-[50px]">
+        <div class="relative">
+            <p class="font-extrabold text-lg text[#3734A9] text-center lg:px-0 sm:px-24 px-5">Testimonial</p>
+            <p class="mt-6 lg:text-xl5 text-2xl text-black font-extrabold text-center lg:px-0 sm:px-24 px-5">What Our Happy <br> User Says</p>
+        </div>
+        <div class=" flex items-center overflow-x-auto flow sidebar lg:py-6 py-4 lg:px-[123px] px-10 lg:mt-[64px] mt-10 mx-5">
+            <div class="min-w-[385px] h-auto relative border border-[#EDEDED] shadow-s20">
+                <div class="absolute -top-[15px] left-8 bg-[#3734A9] rounded-[50%] p-2">
+                    <img src="images/inverted comma.svg" alt="">
+                </div>
+                <div class="border-b border-[#EAEFF3] px-[30px]">
+                    <div class="flex items-center mt-[60px]">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                    </div>
+                    <p class="font-normal text-base text-[#797979] pt-4 pb-5">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and.</p>
+                </div>
+                <div class="flex items-center px-[30px] py-4">
+                    <img src="images/Testimonial-1.svg" alt="icon">
+                    <div class="ml-3">
+                        <p class="font-semibold text-sm text-[#453232]">Serhiy Hipskyy</p>
+                        <p class="font-normal text-xs text-[#797979]">CEO Universal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="min-w-[385px] h-auto relative border border-[#EDEDED] shadow-s20 ml-7">
+                <div class="absolute -top-[15px] left-8 bg-[#3734A9] rounded-[50%] p-2">
+                    <img src="images/inverted comma.svg" alt="">
+                </div>
+                <div class="border-b border-[#EAEFF3] px-[30px]">
+                    <div class="flex items-center mt-[60px]">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                    </div>
+                    <p class="font-normal text-base text-[#797979] pt-4 pb-5">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and.</p>
+                </div>
+                <div class="flex items-center px-[30px] py-4">
+                    <img src="images/Testimonial-1.svg" alt="icon">
+                    <div class="ml-3">
+                        <p class="font-semibold text-sm text-[#453232]">Serhiy Hipskyy</p>
+                        <p class="font-normal text-xs text-[#797979]">CEO Universal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="min-w-[385px] h-auto relative border border-[#EDEDED] shadow-s20 ml-7">
+                <div class="absolute -top-[15px] left-8 bg-[#3734A9] rounded-[50%] p-2">
+                    <img src="images/inverted comma.svg" alt="">
+                </div>
+                <div class="border-b border-[#EAEFF3] px-[30px]">
+                    <div class="flex items-center mt-[60px]">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                    </div>
+                    <p class="font-normal text-base text-[#797979] pt-4 pb-5">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and.</p>
+                </div>
+                <div class="flex items-center px-[30px] py-4">
+                    <img src="images/Testimonial-1.svg" alt="icon">
+                    <div class="ml-3">
+                        <p class="font-semibold text-sm text-[#453232]">Serhiy Hipskyy</p>
+                        <p class="font-normal text-xs text-[#797979]">CEO Universal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="min-w-[385px] h-auto relative border border-[#EDEDED] shadow-s20 ml-7">
+                <div class="absolute -top-[15px] left-8 bg-[#3734A9] rounded-[50%] p-2">
+                    <img src="images/inverted comma.svg" alt="">
+                </div>
+                <div class="border-b border-[#EAEFF3] px-[30px]">
+                    <div class="flex items-center mt-[60px]">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                    </div>
+                    <p class="font-normal text-base text-[#797979] pt-4 pb-5">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and.</p>
+                </div>
+                <div class="flex items-center px-[30px] py-4">
+                    <img src="images/Testimonial-1.svg" alt="icon">
+                    <div class="ml-3">
+                        <p class="font-semibold text-sm text-[#453232]">Serhiy Hipskyy</p>
+                        <p class="font-normal text-xs text-[#797979]">CEO Universal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="min-w-[385px] h-auto relative border border-[#EDEDED] shadow-s20 ml-7">
+                <div class="absolute -top-[15px] left-8 bg-[#3734A9] rounded-[50%] p-2">
+                    <img src="images/inverted comma.svg" alt="">
+                </div>
+                <div class="border-b border-[#EAEFF3] px-[30px]">
+                    <div class="flex items-center mt-[60px]">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                    </div>
+                    <p class="font-normal text-base text-[#797979] pt-4 pb-5">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and.</p>
+                </div>
+                <div class="flex items-center px-[30px] py-4">
+                    <img src="images/Testimonial-1.svg" alt="icon">
+                    <div class="ml-3">
+                        <p class="font-semibold text-sm text-[#453232]">Serhiy Hipskyy</p>
+                        <p class="font-normal text-xs text-[#797979]">CEO Universal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="min-w-[385px] h-auto relative border border-[#EDEDED] shadow-s20 ml-7">
+                <div class="absolute -top-[15px] left-8 bg-[#3734A9] rounded-[50%] p-2">
+                    <img src="images/inverted comma.svg" alt="">
+                </div>
+                <div class="border-b border-[#EAEFF3] px-[30px]">
+                    <div class="flex items-center mt-[60px]">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                    </div>
+                    <p class="font-normal text-base text-[#797979] pt-4 pb-5">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and.</p>
+                </div>
+                <div class="flex items-center px-[30px] py-4">
+                    <img src="images/Testimonial-1.svg" alt="icon">
+                    <div class="ml-3">
+                        <p class="font-semibold text-sm text-[#453232]">Serhiy Hipskyy</p>
+                        <p class="font-normal text-xs text-[#797979]">CEO Universal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="min-w-[385px] h-auto relative border border-[#EDEDED] shadow-s20 ml-7">
+                <div class="absolute -top-[15px] left-8 bg-[#3734A9] rounded-[50%] p-2">
+                    <img src="images/inverted comma.svg" alt="">
+                </div>
+                <div class="border-b border-[#EAEFF3] px-[30px]">
+                    <div class="flex items-center mt-[60px]">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                        <img src="images/Star-1.svg" alt="icon">
+                    </div>
+                    <p class="font-normal text-base text-[#797979] pt-4 pb-5">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and.</p>
+                </div>
+                <div class="flex items-center px-[30px] py-4">
+                    <img src="images/Testimonial-1.svg" alt="icon">
+                    <div class="ml-3">
+                        <p class="font-semibold text-sm text-[#453232]">Serhiy Hipskyy</p>
+                        <p class="font-normal text-xs text-[#797979]">CEO Universal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full lg:mt-[50px] mt-10 lg:px-[123px] sm:px-12 px-5 lg:mb-[158px] mb-16">
+        <div class="flex lg:flex-row flex-col">
+            <div class="lg:w-[50%] w-full">
+                <p class="font-extrabold lg:text-xl5 text-3xl text-black">Any questions?</p>
+                <p class="font-extrabold lg:text-xl5 text-3xl text-black">We got you.</p>
+                <p class="font-normal text-lg text-[#1B1C31] mt-[60px]">Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+                <div class="flex items-center mt-12">
+                    <p class="font-bold text-lg text-[#4F46BA]">More FAQs</p>
+                    <img src="images/FAQ's.svg" alt="icon" class="ml-2.5">
+                </div>
+            </div>
+            <div class="lg:w-[50%] w-full lg:mt-0 mt-5">
+                <div class="accordion relative">
+                    <div class="contentBx relative border-b-2 border-[#8896A6] pb-5">
+                        <div class="label relative flex justify-between items-center font-bold text-xl text[#1B1C31]">How this work?
+                            <!-- <span><img src="images/Plus.svg" alt="icon"></span> -->
+                        </div>
+                        <div class="content sidebar pt-3">
+                            <p>Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+                        </div>
+                    </div>
+                    <div class="contentBx relative pt-6 border-b-2 border-[#8896A6] pb-5">
+                        <div class="label relative flex justify-between items-center font-bold text-xl text[#1B1C31]">Are there any additional fee?
+                            <!-- <span><img src="images/Plus.svg" alt="icon"></span> -->
+                        </div>
+                        <div class="content sidebar pt-3">
+                            <p>Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+                        </div>
+                    </div>
+                    <div class="contentBx relative pt-6 border-b-2 border-[#8896A6] pb-5">
+                        <div class="label relative flex justify-between items-center font-bold text-xl text[#1B1C31]">How can I get the app?
+                            <!-- <span><img src="images/Plus.svg" alt="icon"></span> -->
+                        </div>
+                        <div class="content sidebar pt-3">
+                            <p>Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+                        </div>
+                    </div>
+                    <div class="contentBx relative pt-6 border-b-2 border-[#8896A6] pb-5">
+                        <div class="label relative flex justify-between items-center font-bold text-xl text[#1B1C31]">What features do you offer and other not?
+                            <!-- <span><img src="images/Plus.svg" alt="icon"></span> -->
+                        </div>
+                        <div class="content sidebar pt-3">
+                            <p>Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative w-full">
+        <img src="images/Mask-group.svg" alt="image" class="w-full sm:block hidden">
+        <div class="sm:w-[593px] w-full sm:absolute sm:top-[50%] sm:translate-y-[-50%] md:translate-x-0 md:left-[100px] sm:left-[50%] sm:translate-x-[-50%] relative bg-[#3734A9] sm:rounded-[16px] rounded-tl-[16px] rounded-tr-[16px] lg:px-[54px] px-5 lg:py-[60px] py-6">
+            <p class="font-bold text-sm text-[#DEE1E6]">Join with our Community</p>
+            <p class="text-xl6 font-extralight text-[#FFFFFF] pt-2.5">Set your social media</p>
+            <p class="text-xl6 font-extralight text-[#FFFFFF] pb-5">growth on autopilot.</p>
+            <div class="relative w-full mt-[17px] mb-7">
+                <label for=""></label>
+                <input type="text" class="sm:w-full w-full sm:h-[51px] h-9 relative border outline-0 border-[#E8E8E8] bg-[#DEE1E6] rounded-lg shadow-s3 pl-4 pr-[114px] text-[#0D1B2A] sm:text-xs1 text-xs3 font-medium placeholder:font-normal sm:placeholder:text-xs1 placeholder:text-xs placeholder:text-[#9D9D9D]" placeholder="Enter your email address">
+                <button class="absolute top-0 right-0 flex justify-center items-center text-center bg-[#FF7F5C] sm:h-[51px] h-9 w-[101px] shadow-s3 rounded-lg font-bold text-[#ffffff] sm:text-xs1 text-xs">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer class="w-full bg-[#1B1C31]">
+        <div class="py-[72px] border-b border-[#404444]">
+            <p class="lg:text-center text-left font-normal lg:text-xl5 text-2xl text-[#FFFFFF] lg:px-0 px-10">Join millions of  <br> creative people with logo</p>
+            <div class="flex lg:justify-center justify-start lg:px-0 px-10">
+                <button type="button" class="flex items-center justify-center font-semibold text-sm text-[#121313] bg-[#F9896B] rounded-[5px] py-4 w-[186px] mt-5">
+                    Join The Waitlist
+                    <span><img src="images/wishlist.svg" alt="icon" class="ml-3"></span>
+                </button>
+            </div>
+        </div>
+        <div class="w-full flex lg:flex-row flex-col items-center lg:py-10 py-5 lg:px-[100px] sm:px-10 px-5 border-b border-[#404444]">
+            <div class="lg:w-1/2 w-full">
+                <p class="font-bold text-xl text-[#FFFFFF]">LOGO</p>
+                <p class="mt-[18px] text-base font-normal text-[#DEE1E6]">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+            </div>
+            <div class="lg:w-1/2 w-full lg:mt-0 mt-4 flex flex-wrap justify-between">
+                <div class="md:w-1/3 mb-5 w-full">
+                    <p class="font-bold text-white text-xl7">Company</p>
+                    <ul class="mt-[35px]">
+                        <li class="font-normal text-base text-white cursor-pointer">About Us</li>
+                        <li class="font-normal text-base text-white cursor-pointer pt-4">Careers</li>
+                        <li class="font-normal text-base text-white cursor-pointer pt-4">Blog</li>
+                        <li class="font-normal text-base text-white cursor-pointer pt-4">Pricing</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3 mb-5 w-full">
+                    <p class="font-bold text-white text-xl7">Product</p>
+                    <ul  class="mt-[35px]">
+                        <li class="font-normal text-base text-white cursor-pointer">Facebook Followers</li>
+                        <li class="font-normal text-base text-white cursor-pointer pt-4">Instagram Followers</li>
+                        <li class="font-normal text-base text-white cursor-pointer pt-4">Twitter Followers</li>
+                        <li class="font-normal text-base text-white cursor-pointer pt-4">TikTok Followers</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3 mb-5 w-full">
+                    <p class="font-bold text-white text-xl7">Resources</p>
+                    <ul  class="mt-[35px]">
+                        <li class="font-normal text-base text-white cursor-pointer">Proposal Template</li>
+                        <li class="font-normal text-base text-white cursor-pointer pt-4">Invoices</li>
+                        <li class="font-normal text-base text-white cursor-pointer pt-4">Tuturoial</li>
+                        <li class="font-normal text-base text-white cursor-pointer pt-4">How to increase activity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="py-10 md:px-[122px] sm:px-10 px-5 w-full flex flex-wrap justify-between items-center">
+            <p class="font-normal text-xs text-white">2023 All rights reserved. -- Privacy Policy - Terms of Services</p>
+            <p class="font-normal text-xs text-white">Supported by <span class="font-bold text-white text-xs">Microsoft Startup </span></p>
+        </div>
+    </footer>
+    <script>
+    const accordion = document.getElementsByClassName('contentBx');
+    for (i=0; i<accordion.length; i++) {
+        accordion[i].addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    }
+    </script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+</body>
+</html>
